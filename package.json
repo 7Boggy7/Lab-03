@@ -1,0 +1,20 @@
+{
+  "name": "lab-03-spaceship",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .js",
+    "format": "prettier --write .",
+    "bench": "node scripts/bench.mjs",
+    "assets": "python3 tools/generate_assets.py"
+  },
+  "devDependencies": {
+    "eslint": "^9.9.0",
+    "prettier": "^3.3.3",
+    "vite": "^5.4.0"
+  }
+}

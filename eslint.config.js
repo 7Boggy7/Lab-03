@@ -1,0 +1,37 @@
+export default [
+  {
+    files: ['src/**/*.js', 'server/**/*.js'],
+    languageOptions: {
+      ecmaVersion: 2022,
+      sourceType: 'module',
+      globals: {
+        window: 'readonly',
+        document: 'readonly',
+        requestAnimationFrame: 'readonly',
+        cancelAnimationFrame: 'readonly',
+        performance: 'readonly',
+        setInterval: 'readonly',
+        clearInterval: 'readonly',
+        setTimeout: 'readonly',
+        clearTimeout: 'readonly',
+        fetch: 'readonly',
+        console: 'readonly',
+        AbortController: 'readonly',
+        AbortSignal: 'readonly',
+        EventTarget: 'readonly',
+        CustomEvent: 'readonly',
+        URL: 'readonly',
+        URLSearchParams: 'readonly',
+        AudioContext: 'readonly',
+        OfflineAudioContext: 'readonly',
+        createImageBitmap: 'readonly',
+      },
+    },
+    rules: {
+      'no-unused-vars': 'warn',
+      'no-console': 'off',
+      eqeqeq: 'error',
+      'prefer-const': 'warn',
+    },
+  },
+];
